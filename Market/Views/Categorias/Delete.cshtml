@@ -1,0 +1,28 @@
+﻿@using Market.Core.Application.ViewModels.Categorias;
+@model SaveCategoriaViewModel
+@{
+    ViewData["Title"] = "Eliminar Categoria";
+}
+<div class="row">
+
+    <div class="col-6 offset-3" >
+        <div class="card">
+            <div class="card-header bg-danger text-light font-weight-bold">
+                <h4>Esta seguro que desea eliminar la categoria @Model.Nombre?</h4>
+            </div>
+            <div class="card-body">
+
+                <form method="post" asp-controller="Category" asp-action="EliminarC">
+                
+                    <input type="hidden" asp-for="Id" />
+
+                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                    <a asp-controller="Categorias" asp-action="Index" class="btn btn-outline-success">Cancelar</a>
+                
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

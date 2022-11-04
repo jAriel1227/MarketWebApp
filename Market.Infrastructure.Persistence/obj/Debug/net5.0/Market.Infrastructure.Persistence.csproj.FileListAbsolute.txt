@@ -1,0 +1,17 @@
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Infrastructure.Persistence.deps.json
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Infrastructure.Persistence.dll
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Infrastructure.Persistence.pdb
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Core.Application.dll
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Core.Domain.dll
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Core.Application.pdb
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\bin\Debug\net5.0\Market.Core.Domain.pdb
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.dll
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\refint\Market.Infrastructure.Persistence.dll
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\Market.Infrastructure.Persistence.pdb
+C:\Users\jarie\source\repos\MarketWepApp\Market.Infrastructure.Persistence\obj\Debug\net5.0\ref\Market.Infrastructure.Persistence.dll

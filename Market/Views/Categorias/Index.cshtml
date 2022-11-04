@@ -1,0 +1,62 @@
+﻿@using Market.Core.Application.ViewModels.Categorias;
+@model List<CategoriaViewModel>
+@{
+    ViewData["Title"] = "Categorias";
+}
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-12">
+        <div class="card">       
+             <div class="card-header bg-dark">
+               <div class="d-flex justify-content-between align-items-center">
+                <h3 class="font-weight-bold text-white">Mantenimiento de Categorias</h3>
+                <a asp-controller="Categorias" asp-action="Crear" class="btn btn-primary font-weight-bold">Nueva Categoria</a>
+               </div>
+             </div>
+       </div>
+        <div class="card-body">
+            <div class="row">
+                 @if (Model == null || Model.Count == 0)
+        {
+            <div class="col-12">
+               <div class="p-4 mb-3 bg-light rounded mt-2">
+                  <h4 class="fst-italic text-center">No hay categorias creadas.</h4>
+                  <label class="text-primary">Info:</label>
+                  <p class="mb-0 fst-italic">Crea una nueva categoria o varias categorias.</p>
+               </div>
+            </div>
+        }
+        else
+        {
+            @foreach (CategoriaViewModel item in Model)
+            {
+                <div class="col-4 mt-2">
+                    <div class="card border-radius">                       
+
+                        <div class="card-body color-cont border-radius">
+                            <h4 class="card-title text-black">@item.Nombre</h4>
+                            <hr>
+                            <p class="card-text text-black">@item.Descripcion</p>
+                            <div class="d-flex justify-content-between align-items-center">                                                                                        
+                              <small class="font-weight-bold text-black fs-12">Cant. Articulos: | <font size="3" color="teal">@item.CountArti</font> |</small>
+                             <!--Cuenta de usuarios</> <small class="font-weight-bold text-white fs-12">Cant. Usuarios: | <font size="3" color="cyan"></font> |</small>-->
+                            </div>
+                            <hr>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-1">
+                                <div class="btn-group">
+                                    <a asp-controller="Categorias" asp-action="Editar" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning">Editar</a>
+                                    <a asp-controller="Categorias" asp-action="Eliminar" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+            </div>
+        </div>
+       
+    </div>
+  </div>
+</div>
