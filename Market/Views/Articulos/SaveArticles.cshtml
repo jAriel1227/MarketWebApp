@@ -14,7 +14,7 @@
             </div>
          <div class="card-body">
 
-                   @if(Model.CategoryList != null || Model.CategoryList.Count != 0)
+                   @if(Model.CategoryList == null || Model.CategoryList.Count == 0)
                     {                        
                         <div class="p-4 mb-3 bg-light rounded mt-2">
                            <h4 class="fst-italic text-center">Debe crear categorias, para poder añadir nuevos anuncios...</h4>
@@ -36,6 +36,7 @@
                             <div class="mb-3">
                                 <label asp-for="Descripcion" class="form-label">Descripcion: </label>
                                 <textarea asp-for="Descripcion" class="form-control"></textarea>
+                                <span asp-validation-for="Descripcion" class="text-danger"></span>
                             </div>
 
                             <div class="mb-4">
