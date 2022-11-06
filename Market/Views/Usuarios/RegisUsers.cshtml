@@ -1,0 +1,100 @@
+﻿@using Market.Core.Application.ViewModels.Usuarios;
+@model SaveUsuarioViewModel
+@{
+    
+    ViewData["Title"] = "Nuevo Usuario";
+}
+<!--Nuevo formulario de refistro-->
+<body>
+    <script src="~/js/site.js"></script>
+
+    <form class="form" method="post" asp-controller="Usuarios" asp-action="RegisUsers">        
+       <!--TITULO------------------------>
+        <h1 class="titulo">Registrarse</h1>        
+          <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+          <input class="cajas" type="text" asp-for="Nombre" placeholder="Nombre" required maxlength="30" onkeypress="return soloLetras(event)">
+          <span asp-validation-for="Nombre" class="text-danger"></span>
+
+          <input class="cajas" type="text" asp-for="Apellido" placeholder="Apellido" required maxlength="30" onkeypress="return soloLetras(event)">   
+          <span asp-validation-for="Apellido" class="text-danger"></span>
+
+          <input class="cajas" type="text" asp-for="Username" placeholder="UserName" required maxlength="30">
+          <span asp-validation-for="Username" class="text-danger"></span>
+
+          <input class="cajas" type="password" asp-for="Contrasena" placeholder="Password" required maxlength="30">
+          <span asp-validation-for="Contrasena" class="text-danger"></span>
+
+          <input class="cajas" type="password" asp-for="ConfirPass" placeholder="Confirm Password" required maxlength="30">
+          <span asp-validation-for="ConfirPass" class="text-danger"></span>
+
+          <input class="cajas" id="tel" asp-for="Telephone" type="tel" placeholder="(000)-000-0000" required maxlength="10" onchange="formatear();">
+          <span asp-validation-for="Telephone" class="text-danger"></span>
+
+          <input class="cajas" type="email" asp-for="Email" placeholder="Email" required maxlength="30">
+          <span asp-validation-for="Email" class="text-danger"></span>
+
+      <!--BOTON-DE-REGISTRARSE-------------------------->
+          <input type="submit" class="btn" value="REGISTRAR">  
+          <a asp-controller="Usuarios" asp-action="Index" class="btn btn-outline-danger">Volver atras</a>
+    </form>  
+</body>
+
+<!--Formulario viejo
+<div class="row">
+    <div class="col-6 offset-3">
+         <div class="card">
+            <div class="card-header bg-dark text-light">
+                <h4>Creando un nuevo Usuario</h4>
+            </div>
+               <div class="card-body"> 
+                <form method="post" asp-controller="Users" asp-action="RegisUsers")>
+                     <div class="mb-3">
+                        <label asp-for="Nombre" class="form-label">Nombre: </label>
+                        <input asp-for="Nombre" class="form-control">
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                     </div>
+                     <div class="mb-3">
+                        <label asp-for="Apellido" class="form-label">Apellido: </label>
+                        <input asp-for="Apellido" class="form-control">
+                        <span asp-validation-for="Apellido" class="text-danger"></span>
+                     </div>                    
+                     <div class="mb-3">
+                      <label asp-for="Email" class="form-label">Email: </label>
+                         <input asp-for="Email" class="form-control">
+                         <span asp-validation-for="Email" class="text-danger"></span>
+                     </div>
+                     <div class="mb-3">
+                      <label asp-for="Telephone" class="form-label">Telefono: </label>
+                         <input asp-for="Telephone" class="form-control">
+                         <span asp-validation-for="Telephone" class="text-danger"></span>
+                     </div>                        
+                     <div class="mb-3">
+                      <label asp-for="Username" class="form-label">Nombre de usuario: </label>
+                         <input asp-for="Username" class="form-control">
+                         <span asp-validation-for="Username" class="text-danger"></span>
+                     </div>
+                     <div class="mb-3">                      
+                     <label asp-for="Contrasena" class="form-label">Contraseña: </label>
+                        <input asp-for="Contrasena" class="form-control">
+                        <span asp-validation-for="Contrasena" class="text-danger"></span>
+                     </div>
+                     <div class="mb-3">                      
+                     <label asp-for="ConfirPass" class="form-label">Confirmar Contraseña: </label>
+                        <input asp-for="ConfirPass" class="form-control">
+                        <span asp-validation-for="ConfirPass" class="text-danger"></span>
+                     </div> 
+                        <div class="d-flex justify-content-between align-items-center">
+                           <button type="submit" class="btn btn-outline-success">Guardar</button>
+                           <a asp-controller="Users" asp-action="Index" class="btn btn-outline-danger">Volver atras</a>
+                        </div>
+                 </form>              
+         </div>
+      </div>
+   </div>
+</div>-->
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
+

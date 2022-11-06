@@ -1,0 +1,28 @@
+﻿@using Market.Core.Application.ViewModels.Usuarios;
+@model LoginUsersViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<body class="bodylogin">
+  <div class="container-fluid">
+      <div class="loginbox">
+          <img src="https://blog.cpanel.com/wp-content/uploads/2019/08/user-01.png" alt="User Image" class="user"/>
+          <h2 class="h2-class">E-Market Login</h2>
+          @Html.ValidationSummary(false,"",new{@Class = "text-danger"})
+          <form method="post" asp-controller="Usuarios" asp-action="Index">
+              <div class="mb-3">
+                  <label asp-for="Username" class="col-form-label font-weight-bold">Nombre de usario:</label>
+                  <input class="form-control" asp-for="Username" required placeholder="UserName">
+              </div>
+              <div class="mb-3">
+                  <label asp-for="Contrasena" class="col-form-label font-weight-bold">Contraseña:</label>
+                  <input class="form-control" asp-for="Contrasena" required placeholder="Password">                
+              </div>
+              <div class="d-flex justify-content-between align-items-center"> 
+                <button type="submit" class="btn btn-success btn-lg font-weight-bold" style="padding-left: 1.0rem; padding-right: 1.0rem;">Login</button>                                 
+                <a asp-controller="Usuarios" asp-action="RegisUsers" class="btn btn-primary btn-lg font-weight-bold" style="padding-left: 1.0rem; padding-right: 1.0rem;">Registrate</a>
+              </div>
+          </form>
+      </div>                      
+  </div>
+</body>

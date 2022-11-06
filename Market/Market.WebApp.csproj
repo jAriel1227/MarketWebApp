@@ -19,8 +19,4 @@
     <ProjectReference Include="..\Market.Infrastructure.Persistence\Market.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Usuarios\" />
-  </ItemGroup>
-
 </Project>
