@@ -25,6 +25,9 @@ a.navbar-brand {
 .border-radius{
     border-radius: 5px;
 }
+.card-color{
+    background: #000000;
+}
 /* Provide sufficient contrast against white background */
 a {
     color: #0366d6;

@@ -14,7 +14,7 @@ namespace Market.Core.Application.ViewModels.Categorias
         public string Descripcion { get; set; }
 
         public int CountArti { get; set; }
-        public int UserQuantity { get; set; }
+       // public int UserQuantity { get; set; }
         //Propiedades de navegacion
         public List<ArticulosViewModel> CategoryArti { get; set; }
     }

@@ -31,16 +31,18 @@
         {
             @foreach (CategoriaViewModel item in Model)
             {
-                <div class="col-4 mt-2">
-                    <div class="card border-radius">                       
-
-                        <div class="card-body color-cont border-radius">
-                            <h4 class="card-title text-black">@item.Nombre</h4>
+                 <div class="col-4 mt-2">
+                    <div class="card border-radius bg-black"> 
+                        <div class="card-body border-radius">
+                            <div class="bg-primary border-radius">
+                                <h4 class="card-title fst-italic text-white text-center">@item.Nombre</h4>
+                            </div>
                             <hr>
-                            <p class="card-text text-black">@item.Descripcion</p>
+                            <h6 class="text-info">Descripcion:</h6>
+                            <p class="card-text text-white-50 fst-italic">@item.Descripcion</p>
                             <div class="d-flex justify-content-between align-items-center">                                                                                        
-                              <small class="font-weight-bold text-black fs-12">Cant. Articulos: | <font size="3" color="teal">@item.CountArti</font> |</small>
-                             </> <small class="font-weight-bold text-white fs-12">Cant. Usuarios: | <font size="3" color="cyan">@item.UserQuantity</font> |</small>-->
+                              <small class="font-weight-bold text-white fs-12">Cant. Articulos: | <font size="3" color="teal">@item.CountArti</font> |</small>
+                             <small class="font-weight-bold text-white fs-12">Cant. Usuarios: | <font size="3" color="cyan">@item.CountArti</font> |</small>
                             </div>
                             <hr>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-1">
@@ -51,7 +53,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
+                              
             }
         }
             </div>

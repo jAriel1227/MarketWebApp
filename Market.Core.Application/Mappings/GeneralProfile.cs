@@ -19,7 +19,7 @@ namespace Market.Core.Application.Mappings
             CreateMap<Articulos, ArticulosViewModel>()
                .ForMember(x => x.Usuario, opt => opt.Ignore())
                .ForMember(x => x.Gallery, opt => opt.Ignore())
-              //.ForMember(x => x.Gallery, opt => opt.MapFrom(x => x.Galeria.OrderByDescending(x => x.IdGaleria).Take(4)))
+               .ForMember(x => x.Gallery, opt => opt.MapFrom(x => x.Galeria.OrderByDescending(x => x.IdGaleria).Take(4)))
                .ForMember(x => x.Categorias, opt => opt.Ignore())
                .ReverseMap()
                .ForMember(x => x.CreatedTime, opt => opt.Ignore())
@@ -43,9 +43,6 @@ namespace Market.Core.Application.Mappings
             CreateMap<Categorias, CategoriaViewModel>()
                .ForMember(x => x.CategoryArti, opt => opt.Ignore())
                .ForMember(x => x.CountArti, opt => opt.MapFrom(x => x.CategoriaArti.Count()))
-               //Contar usuarios
-               .ForMember(x => x.UserQuantity, opt => opt.MapFrom(x => x.CategoriaArti.Select(x=> x.UsuarioID.ToString().Count())))
-              //Prueba.ForMember(x => x.UserQuantity, opt => opt.MapFrom(x => x.CategoriaArti.Count(x=> x.Usuario.ArticulosUser.Count().ToString())))
                .ReverseMap()
                .ForMember(x => x.CreatedTime, opt => opt.Ignore())
                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
