@@ -5,37 +5,36 @@
     ViewData["Title"] = "Nuevo Usuario";
 }
 <!--Nuevo formulario de refistro-->
-<body>
+<body class="bg-registro">
     <script src="~/js/site.js"></script>
-
     <form class="form" method="post" asp-controller="Usuarios" asp-action="RegisUsers">        
        <!--TITULO------------------------>
         <h1 class="titulo">Registrarse</h1>        
           <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
-          <input class="cajas" type="text" asp-for="Nombre" placeholder="Nombre" required maxlength="30" onkeypress="return soloLetras(event)">
           <span asp-validation-for="Nombre" class="text-danger"></span>
+          <input class="cajas" type="text" asp-for="Nombre" placeholder="Nombre" onkeypress="return soloLetras(event)">         
 
-          <input class="cajas" type="text" asp-for="Apellido" placeholder="Apellido" required maxlength="30" onkeypress="return soloLetras(event)">   
           <span asp-validation-for="Apellido" class="text-danger"></span>
+          <input class="cajas" type="text" asp-for="Apellido" placeholder="Apellido" onkeypress="return soloLetras(event)">
 
-          <input class="cajas" type="text" asp-for="Username" placeholder="UserName" required maxlength="30">
           <span asp-validation-for="Username" class="text-danger"></span>
+          <input class="cajas" type="text" asp-for="Username" placeholder="UserName">
 
-          <input class="cajas" type="password" asp-for="Contrasena" placeholder="Password" required maxlength="30">
           <span asp-validation-for="Contrasena" class="text-danger"></span>
+          <input class="cajas" type="password" asp-for="Contrasena" placeholder="Password">          
 
-          <input class="cajas" type="password" asp-for="ConfirPass" placeholder="Confirm Password" required maxlength="30">
           <span asp-validation-for="ConfirPass" class="text-danger"></span>
+          <input class="cajas" type="password" asp-for="ConfirPass" placeholder="Confirm Password">
 
-          <input class="cajas" id="tel" asp-for="Telephone" type="tel" placeholder="(000)-000-0000" required maxlength="10" onchange="formatear();">
           <span asp-validation-for="Telephone" class="text-danger"></span>
+          <input class="cajas" id="tel" asp-for="Telephone" type="tel" placeholder="(000)-000-0000" onchange="formatear();">          
 
-          <input class="cajas" type="email" asp-for="Email" placeholder="Email" required maxlength="30">
           <span asp-validation-for="Email" class="text-danger"></span>
+          <input class="cajas" type="email" asp-for="Email" placeholder="Email" required maxlength="30">         
 
       <!--BOTON-DE-REGISTRARSE-------------------------->
-          <input type="submit" class="btn" value="REGISTRAR">  
-          <a asp-controller="Usuarios" asp-action="Index" class="btn btn-outline-danger">Volver atras</a>
+          <input type="submit" class="btn-regis" value="REGISTRAR">  
+          <a asp-controller="Usuarios" asp-action="Index" class="btn btn-regis btn-outline-danger">Volver atras</a>
     </form>  
 </body>
 

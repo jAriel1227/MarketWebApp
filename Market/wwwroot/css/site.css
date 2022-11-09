@@ -6,64 +6,64 @@ for details on configuring this project to bundle and minify static web assets. 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open sans';
+    box-sizing: border-box !important;
+    font-family: 'Open sans' !important;
 }
 /*--IMAGEN-DE-FONDO--------------*/
-body {
-    background-image: url(image/bg-itla.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 15px;
+.bg-registro{
+    background-image: url(../AppImage/bg-itla.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    font-size: 15px !important;
 }
 /*--FORMULARIO-------------------*/
 .form {
-    width: 450px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    background: rgba(34, 18, 0, 0.3);
-    border-radius: 5px;
+    width: 450px !important;
+    padding: 30px !important;
+    margin: auto !important;
+    margin-top: 100px !important;
+    background: rgba(34, 18, 0, 0.3) !important;
+    border-radius: 5px !important;
 }
 /*--TITULO-----------------------*/
 .titulo {
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-align: center;
+    color: #ffffff !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
 }
 /*--CAJAS-DE-DATOS---------------*/
 .cajas {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    border: none;
-    border-left: 10px solid #009dff;
-    transition: all .5s ease;
+    width: 100% !important;
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+    border-radius: 2px !important;
+    border: none !important;
+    border-left: 10px solid #009dff !important;
+    transition: all .5s ease !important;
 }
 
-    .cajas:hover, .cajas:focus {
-        border-left: 10px solid rgb(255, 50, 50);
-    }
+.cajas:hover, .cajas:focus{
+        border-left: 10px solid rgb(255, 50, 50) !important;
+}
 /*--BOTON-DE-REGISTRARSE---------*/
-.btn {
-    width: 100%;
-    padding: 15px;
-    border-radius: 2px;
-    border: none;
-    margin: 20px 0;
-    font-size: 15px;
-    background: #009dff;
-    color: white;
-    cursor: pointer;
-    transition: all .5s ease;
+.btn-regis {
+    width: 100% !important;
+    padding: 15px !important;
+    border-radius: 2px !important;
+    border: none !important;
+    margin: 20px 0 !important;
+    font-size: 15px !important;
+    background: #009dff !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: all .5s ease !important;
 }
 
-    .btn:hover {
-        background: #133043;
-    }
+.btn:hover {
+        background: #133043 !important;
+}
 /*FinUsuarios*/
 
 a.navbar-brand {
