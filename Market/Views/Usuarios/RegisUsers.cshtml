@@ -18,13 +18,13 @@
           <input class="cajas" type="text" asp-for="Apellido" placeholder="Apellido" onkeypress="return soloLetras(event)">
 
           <span asp-validation-for="Username" class="text-danger"></span>
-          <input class="cajas" type="text" asp-for="Username" placeholder="UserName">
+          <input class="cajas" type="text" asp-for="Username" placeholder="Nombre de usuario">
 
           <span asp-validation-for="Contrasena" class="text-danger"></span>
-          <input class="cajas" type="password" asp-for="Contrasena" placeholder="Password">          
+          <input class="cajas" type="password" asp-for="Contrasena" placeholder="Contraseña">          
 
           <span asp-validation-for="ConfirPass" class="text-danger"></span>
-          <input class="cajas" type="password" asp-for="ConfirPass" placeholder="Confirm Password">
+          <input class="cajas" type="password" asp-for="ConfirPass" placeholder="Confirmar Contraseña">
 
           <span asp-validation-for="Telephone" class="text-danger"></span>
           <input class="cajas" id="tel" asp-for="Telephone" type="tel" placeholder="(000)-000-0000" onchange="formatear();">          
@@ -33,7 +33,7 @@
           <input class="cajas" type="email" asp-for="Email" placeholder="Email" required maxlength="30">         
 
       <!--BOTON-DE-REGISTRARSE-------------------------->
-          <input type="submit" class="btn-regis" value="REGISTRAR">  
+          <input type="submit" class="btn-regis" value="Registrar">  
           <a asp-controller="Usuarios" asp-action="Index" class="btn btn-regis btn-outline-danger">Volver atras</a>
     </form>  
 </body>
