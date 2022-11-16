@@ -10,7 +10,7 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 /*--IMAGEN-DE-FONDO--------------*/
 .bg-registro{
-    background-image: url(../AppImage/bg-itla.jpg) !important;
+    background-image: url(../AppImage/fondo.jpg);
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;

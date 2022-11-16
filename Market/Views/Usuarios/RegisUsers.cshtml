@@ -37,60 +37,6 @@
           <a asp-controller="Usuarios" asp-action="Index" class="btn btn-regis btn-outline-danger">Volver atras</a>
     </form>  
 </body>
-
-<!--Formulario viejo
-<div class="row">
-    <div class="col-6 offset-3">
-         <div class="card">
-            <div class="card-header bg-dark text-light">
-                <h4>Creando un nuevo Usuario</h4>
-            </div>
-               <div class="card-body"> 
-                <form method="post" asp-controller="Users" asp-action="RegisUsers")>
-                     <div class="mb-3">
-                        <label asp-for="Nombre" class="form-label">Nombre: </label>
-                        <input asp-for="Nombre" class="form-control">
-                        <span asp-validation-for="Nombre" class="text-danger"></span>
-                     </div>
-                     <div class="mb-3">
-                        <label asp-for="Apellido" class="form-label">Apellido: </label>
-                        <input asp-for="Apellido" class="form-control">
-                        <span asp-validation-for="Apellido" class="text-danger"></span>
-                     </div>                    
-                     <div class="mb-3">
-                      <label asp-for="Email" class="form-label">Email: </label>
-                         <input asp-for="Email" class="form-control">
-                         <span asp-validation-for="Email" class="text-danger"></span>
-                     </div>
-                     <div class="mb-3">
-                      <label asp-for="Telephone" class="form-label">Telefono: </label>
-                         <input asp-for="Telephone" class="form-control">
-                         <span asp-validation-for="Telephone" class="text-danger"></span>
-                     </div>                        
-                     <div class="mb-3">
-                      <label asp-for="Username" class="form-label">Nombre de usuario: </label>
-                         <input asp-for="Username" class="form-control">
-                         <span asp-validation-for="Username" class="text-danger"></span>
-                     </div>
-                     <div class="mb-3">                      
-                     <label asp-for="Contrasena" class="form-label">Contraseña: </label>
-                        <input asp-for="Contrasena" class="form-control">
-                        <span asp-validation-for="Contrasena" class="text-danger"></span>
-                     </div>
-                     <div class="mb-3">                      
-                     <label asp-for="ConfirPass" class="form-label">Confirmar Contraseña: </label>
-                        <input asp-for="ConfirPass" class="form-control">
-                        <span asp-validation-for="ConfirPass" class="text-danger"></span>
-                     </div> 
-                        <div class="d-flex justify-content-between align-items-center">
-                           <button type="submit" class="btn btn-outline-success">Guardar</button>
-                           <a asp-controller="Users" asp-action="Index" class="btn btn-outline-danger">Volver atras</a>
-                        </div>
-                 </form>              
-         </div>
-      </div>
-   </div>
-</div>-->
 @section Scripts{
     @{
         <partial name="_ValidationScriptsPartial"/>
